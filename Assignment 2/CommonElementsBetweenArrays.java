@@ -3,8 +3,8 @@ import java.util.Set;
 
 public class CommonElementsBetweenArrays {
     public static void main(String[] args) {
-        int[] array1 = {1, 2, 3, 4, 5};
-        int[] array2 = {4, 5, 6, 7, 8};
+        int[] array1 = {1, 2, 3, 4, 4};
+        int[] array2 = {3, 4, 6, 7, 8};
 
         // Find and display common elements
         int[] commonElements = findCommonElements(array1, array2);

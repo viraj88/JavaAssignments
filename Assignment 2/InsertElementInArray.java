@@ -13,7 +13,7 @@ public class InsertElementInArray {
         // Read array elements from the user
         System.out.println("Enter the elements of the array:");
         for (int i = 0; i < size; i++) {
-            System.out.print("Element " + (i + 1) + ": ");
+            System.out.print("Element " + (i) + ": ");
             array[i] = scanner.nextInt();
         }
 
@@ -38,23 +38,23 @@ public class InsertElementInArray {
     }
 
     static int[] insertElementInArray(int[] arr, int element, int position) {
-        if (position < 1 || position > arr.length + 1) {
+        if (position < 0 || position > arr.length + 1) {
             System.out.println("Invalid position. Element cannot be inserted.");
             return arr; // Return the original array if position is invalid
         }
 
-        int[] newArray = new int[arr.length + 1];
+        int[] newArray = new int[arr.length];
 
         // Copy elements before the insertion position
-        for (int i = 0; i < position - 1; i++) {
+        for (int i = 0; i < position ; i++) {
             newArray[i] = arr[i];
         }
 
         // Insert the new element
-        newArray[position - 1] = element;
+        newArray[position] = element;
 
         // Copy elements after the insertion position
-        for (int i = position - 1; i < arr.length; i++) {
+        for (int i = position ; i < arr.length - 1; i++) {
             newArray[i + 1] = arr[i];
         }
 

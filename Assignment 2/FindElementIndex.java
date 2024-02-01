@@ -13,7 +13,7 @@ public class FindElementIndex {
         // Read array elements from the user
         System.out.println("Enter the elements of the array:");
         for (int i = 0; i < size; i++) {
-            System.out.print("Element " + (i + 1) + ": ");
+            System.out.print("Element " + (i ) + ": ");
             array[i] = scanner.nextInt();
         }
 
